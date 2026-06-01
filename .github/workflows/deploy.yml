@@ -27,7 +27,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.x'
+          flutter-version: '3.24.5'
           channel: 'stable'
 
       - name: Install dependencies
@@ -36,10 +36,7 @@ jobs:
       - name: Build Web
         run: flutter build web --release --base-href /group-flutter-pages-demo/
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: build/web
