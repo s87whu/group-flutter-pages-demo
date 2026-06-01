@@ -1,6 +1,6 @@
 # 小组 Flutter Web 展示页示例项目
 
-这是配套“GitHub 协作与 Flutter Web 部署”案例的初始项目。组长可以把这个项目提交到 GitHub 仓库的 `main` 分支，4 名组员分别基于它提交 Pull Request。
+这是配套“GitHub 协作与 Flutter Web 部署”案例的初始项目。组长可以把这个项目提交到 GitHub 仓库的 main 分支，4 名组员分别基于它提交 Pull Request。
 
 ## 本地运行
 
@@ -17,7 +17,7 @@ flutter run -d web-server
 
 ## 构建 Web 静态文件
 
-把 `REPO_NAME` 替换成你的 GitHub 仓库名：
+把 REPO_NAME 替换成你的 GitHub 仓库名：
 
 ```bash
 flutter build web --base-href group-flutter-pages-demo
@@ -29,14 +29,14 @@ flutter build web --base-href group-flutter-pages-demo
 build/web/
 ```
 
-这些文件可以发布到仓库的 `gh-pages` 分支。
+这些文件可以发布到仓库的 gh-pages 分支。
 
 ## 组员任务入口
 
-4 名组员可以分别修改 `lib/main.dart` 中的不同位置：
+4 名组员可以分别修改 lib/main.dart 中的不同位置：
 
 1. 组员 A：修改 projectTitle 和 projectSlogan。members，补充真实姓名和分工。
-2. 组员 B：修改 `features`，补充项目功能。
-3. 组员 C：修改 `releaseNotes`，补充部署说明和访问地址。
+2. 组员 B：修改 features ，补充项目功能。
+3. 组员 C：修改 releaseNotes ，补充部署说明和访问地址。
 
 每名组员都应该在自己的分支上修改，提交 commit，然后向组长发起 Pull Request。
