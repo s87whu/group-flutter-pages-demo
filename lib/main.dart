@@ -28,26 +28,29 @@ class TeamHomePage extends StatelessWidget {
   static const String projectSlogan = '用 Flutter Web 展示我们的项目创意与协作过程';
 
   static const List<TeamMember> members = [
-    TeamMember(role: '组长', name: '郭组长', task: '创建仓库、维护 main 分支、审核 PR、发布 GitHub Pages'),
+    TeamMember(
+      role: '组长',
+      name: '郭组长',
+      task: '创建仓库、维护 main 分支、审核 PR、发布 GitHub Pages',
+    ),
     TeamMember(role: '组员 A', name: '林椿翔', task: '修改首页标题和项目口号,补充成员介绍卡片'),
     TeamMember(role: '组员 B', name: '魏凡博', task: '补充项目功能列表'),
     TeamMember(role: '组员 C', name: '郭梓涵', task: '补充发布说明和访问地址'),
   ];
 
   static const List<String> features = [
-    static const List<String> features = [
-'展示小组项目主题和核心亮点',
-'展示成员姓名、角色和任务分工',
-'记录每位组员通过 Pull Request 完成的修改',
-'使用 GitHub Pages 发布 Flutter Web 静态页面'
+    '展示小组项目主题和核心亮点',
+    '展示成员姓名、角色和任务分工',
+    '记录每位组员通过 Pull Request 完成的修改',
+    '使用 GitHub Pages 发布 Flutter Web 静态页面',
   ];
 
- static const List<String> releaseNotes = [
-'源码统一维护在 main 分支，所有组员修改都通过 PR 合并。',
-'组长使用 flutter build web 生成静态网页文件。',
-'构建产物发布到 gh‑pages 分支，并由 GitHub Pages 对外访问。',
-'访问地址格式：https://s87whu.github.io/group‑flutter‑pages‑demo/',
-];
+  static const List<String> releaseNotes = [
+    '源码统一维护在 main 分支，所有组员修改都通过 PR 合并。',
+    '组长使用 flutter build web 生成静态网页文件。',
+    '构建产物发布到 gh‑pages 分支，并由 GitHub Pages 对外访问。',
+    '访问地址格式：https://s87whu.github.io/group‑flutter‑pages‑demo/',
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -101,7 +104,10 @@ class MembersSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text('小组成员与分工', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+        const Text(
+          '小组成员与分工',
+          style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+        ),
         const SizedBox(height: 12),
         ...TeamHomePage.members.map((member) => MemberCard(member: member)),
       ],
@@ -137,7 +143,10 @@ class FeaturesSection extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text('项目功能', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+            const Text(
+              '项目功能',
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            ),
             const SizedBox(height: 8),
             ...TeamHomePage.features.map((feature) => Text('• $feature')),
           ],
@@ -159,7 +168,10 @@ class ReleaseSection extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text('发布说明', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+            const Text(
+              '发布说明',
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            ),
             const SizedBox(height: 8),
             ...TeamHomePage.releaseNotes.map((note) => Text('• $note')),
           ],
@@ -170,7 +182,11 @@ class ReleaseSection extends StatelessWidget {
 }
 
 class TeamMember {
-  const TeamMember({required this.role, required this.name, required this.task});
+  const TeamMember({
+    required this.role,
+    required this.name,
+    required this.task,
+  });
 
   final String role;
   final String name;
