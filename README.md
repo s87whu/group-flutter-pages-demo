@@ -1,6 +1,6 @@
 # 小组 Flutter Web 展示页示例项目
 
-这是配套“GitHub 协作与 Flutter Web 部署”案例的初始项目。组长可以把这个项目提交到 GitHub 仓库的 main 分支，4 名组员分别基于它提交 Pull Request。
+这是配套"GitHub 协作与 Flutter Web 部署"案例的初始项目。组长可以把这个项目提交到 GitHub 仓库的 main 分支，4 名组员分别基于它提交 Pull Request。
 
 ## 本地运行
 
@@ -40,3 +40,13 @@ build/web/
 3. 组员 C：修改 releaseNotes ，补充部署说明和访问地址。
 
 每名组员都应该在自己的分支上修改，提交 commit，然后向组长发起 Pull Request。
+
+## 组员 C 任务效果
+
+**任务**：修改发布说明和访问地址（`releaseNotes`）
+
+修改后的页面效果：
+
+![组员 C 任务效果](screenshots/release-notes-demo.png)
+
+> 图中底部淡蓝色卡片即为发布说明区域，显示了 GitHub Pages 的访问地址。
