@@ -41,9 +41,35 @@ build/web/
 
 每名组员都应该在自己的分支上修改，提交 commit，然后向组长发起 Pull Request。
 
-## 组员 C 任务效果
+## 组员任务效果
 
-**任务**：修改发布说明和访问地址（`releaseNotes`）
+### 组员 A：修改首页标题、项目口号和成员介绍
+
+**任务**：修改 `projectTitle`、`projectSlogan` 和 `members` 列表，补充真实姓名和分工。
+
+修改位置在 `lib/main.dart` 中：
+
+```dart
+static const String projectTitle = '第 1 组校园活动展示平台';
+static const String projectSlogan = '用 Flutter Web 展示我们的项目创意与协作过程';
+
+static const List<TeamMember> members = [
+  TeamMember(role: '组长', name: '郭组长', task: '创建仓库、维护 main 分支、审核 PR、发布 GitHub Pages'),
+  TeamMember(role: '组员 A', name: '林椿翔', task: '修改首页标题和项目口号,补充成员介绍卡片'),
+  TeamMember(role: '组员 B', name: '魏凡博', task: '补充项目功能列表'),
+  TeamMember(role: '组员 C', name: '郭梓涵', task: '补充发布说明和访问地址'),
+];
+```
+
+修改后的页面效果：
+
+![组员 A 任务效果](screenshots/member-a-task.png)
+
+> 图中顶部大标题和口号已替换为小组真实信息，下方成员卡片显示了每位组员的真实姓名和具体分工。
+
+### 组员 C：修改发布说明和访问地址
+
+**任务**：修改 `releaseNotes` 列表，将占位的部署说明替换为实际的项目发布地址。
 
 修改后的页面效果：
 
