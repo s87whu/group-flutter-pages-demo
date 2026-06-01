@@ -35,19 +35,18 @@ class TeamHomePage extends StatelessWidget {
   ];
 
   static const List<String> features = [
-    static const List<String> features = [
-'展示小组项目主题和核心亮点',
-'展示成员姓名、角色和任务分工',
-'记录每位组员通过 Pull Request 完成的修改',
-'使用 GitHub Pages 发布 Flutter Web 静态页面'
+    '展示小组项目主题和核心亮点',
+    '展示成员姓名、角色和任务分工',
+    '记录每位组员通过 Pull Request 完成的修改',
+    '使用 GitHub Pages 发布 Flutter Web 静态页面',
   ];
 
- static const List<String> releaseNotes = [
-'源码统一维护在 main 分支，所有组员修改都通过 PR 合并。',
-'组长使用 flutter build web 生成静态网页文件。',
-'构建产物发布到 gh‑pages 分支，并由 GitHub Pages 对外访问。',
-'访问地址格式：https://s87whu.github.io/group‑flutter‑pages‑demo/',
-];
+  static const List<String> releaseNotes = [
+    '源码统一维护在 main 分支，所有组员修改都通过 PR 合并。',
+    '组长使用 flutter build web 生成静态网页文件。',
+    '构建产物发布到 gh‑pages 分支，并由 GitHub Pages 对外访问。',
+    '访问地址格式：https://s87whu.github.io/group‑flutter‑pages‑demo/',
+  ];
 
   @override
   Widget build(BuildContext context) {
