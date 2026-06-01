@@ -118,7 +118,7 @@ class MemberCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        leading: CircleAvatar(child: Text(member.role.characters.last)),
+        leading: CircleAvatar(child: Text(member.role.substring(member.role.length - 1))),
         title: Text('${member.role}：${member.name}'),
         subtitle: Text(member.task),
       ),
