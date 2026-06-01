@@ -67,6 +67,27 @@ static const List<TeamMember> members = [
 
 > 图中顶部大标题和口号已替换为小组真实信息，下方成员卡片显示了每位组员的真实姓名和具体分工。
 
+### 组员 B：补充项目功能列表
+
+**任务**：修改 `features` 列表，将占位的功能描述替换为项目实际功能。
+
+修改位置在 `lib/main.dart` 中：
+
+```dart
+static const List<String> features = [
+  '展示小组项目主题和核心亮点',
+  '展示成员姓名、角色和任务分工',
+  '记录每位组员通过 Pull Request 完成的修改',
+  '使用 GitHub Pages 发布 Flutter Web 静态页面',
+];
+```
+
+修改后的页面效果：
+
+![组员 B 任务效果](screenshots/member-b-task.png)
+
+> 图中白色卡片即为项目功能区域，列出了小组项目的四项核心功能。
+
 ### 组员 C：修改发布说明和访问地址
 
 **任务**：修改 `releaseNotes` 列表，将占位的部署说明替换为实际的项目发布地址。
