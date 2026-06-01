@@ -35,7 +35,7 @@ build/web/
 
 4 名组员可以分别修改 `lib/main.dart` 中的不同位置：
 
-1. 组员 A：修改 `projectTitle` 和 `projectSlogan`。`members`，补充真实姓名和分工。
+1. 组员 A：修改 projectTitle 和 projectSlogan。members，补充真实姓名和分工。
 2. 组员 B：修改 `features`，补充项目功能。
 3. 组员 C：修改 `releaseNotes`，补充部署说明和访问地址。
 
