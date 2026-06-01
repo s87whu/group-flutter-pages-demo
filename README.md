@@ -12,7 +12,7 @@ flutter run
 如果要用浏览器运行，可以选择 Chrome 或 web-server：
 
 ```bash
-flutter run -d chrome
+flutter run -d web-server
 ```
 
 ## 构建 Web 静态文件
@@ -20,7 +20,7 @@ flutter run -d chrome
 把 `REPO_NAME` 替换成你的 GitHub 仓库名：
 
 ```bash
-flutter build web --base-href /REPO_NAME/
+flutter build web --base-href group-flutter-pages-demo
 ```
 
 构建完成后，静态网站文件位于：
@@ -35,9 +35,8 @@ build/web/
 
 4 名组员可以分别修改 `lib/main.dart` 中的不同位置：
 
-1. 组员 A：修改 `projectTitle` 和 `projectSlogan`。
-2. 组员 B：修改 `members`，补充真实姓名和分工。
-3. 组员 C：修改 `features`，补充项目功能。
-4. 组员 D：修改 `releaseNotes`，补充部署说明和访问地址。
+1. 组员 A：修改 `projectTitle` 和 `projectSlogan`。`members`，补充真实姓名和分工。
+2. 组员 B：修改 `features`，补充项目功能。
+3. 组员 C：修改 `releaseNotes`，补充部署说明和访问地址。
 
 每名组员都应该在自己的分支上修改，提交 commit，然后向组长发起 Pull Request。
